@@ -26,10 +26,12 @@ Partial Class Form1
         Me.textNim = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.textNama = New System.Windows.Forms.TextBox()
-        Me.textProdi = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnTambah = New System.Windows.Forms.Button()
         Me.list = New System.Windows.Forms.ListView()
+        Me.cbKelamin = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cbProdi = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -64,13 +66,6 @@ Partial Class Form1
         Me.textNama.Size = New System.Drawing.Size(100, 20)
         Me.textNama.TabIndex = 3
         '
-        'textProdi
-        '
-        Me.textProdi.Location = New System.Drawing.Point(65, 77)
-        Me.textProdi.Name = "textProdi"
-        Me.textProdi.Size = New System.Drawing.Size(100, 20)
-        Me.textProdi.TabIndex = 5
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -82,7 +77,7 @@ Partial Class Form1
         '
         'btnTambah
         '
-        Me.btnTambah.Location = New System.Drawing.Point(65, 123)
+        Me.btnTambah.Location = New System.Drawing.Point(65, 159)
         Me.btnTambah.Name = "btnTambah"
         Me.btnTambah.Size = New System.Drawing.Size(75, 23)
         Me.btnTambah.TabIndex = 6
@@ -92,20 +87,47 @@ Partial Class Form1
         'list
         '
         Me.list.HideSelection = False
-        Me.list.Location = New System.Drawing.Point(15, 176)
+        Me.list.Location = New System.Drawing.Point(15, 212)
         Me.list.Name = "list"
         Me.list.Size = New System.Drawing.Size(335, 115)
         Me.list.TabIndex = 7
         Me.list.UseCompatibleStateImageBehavior = False
+        '
+        'cbKelamin
+        '
+        Me.cbKelamin.FormattingEnabled = True
+        Me.cbKelamin.Location = New System.Drawing.Point(65, 112)
+        Me.cbKelamin.Name = "cbKelamin"
+        Me.cbKelamin.Size = New System.Drawing.Size(121, 21)
+        Me.cbKelamin.TabIndex = 8
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(9, 115)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 13)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "Kelamin"
+        '
+        'cbProdi
+        '
+        Me.cbProdi.FormattingEnabled = True
+        Me.cbProdi.Location = New System.Drawing.Point(65, 77)
+        Me.cbProdi.Name = "cbProdi"
+        Me.cbProdi.Size = New System.Drawing.Size(121, 21)
+        Me.cbProdi.TabIndex = 10
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.cbProdi)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.cbKelamin)
         Me.Controls.Add(Me.list)
         Me.Controls.Add(Me.btnTambah)
-        Me.Controls.Add(Me.textProdi)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.textNama)
         Me.Controls.Add(Me.Label2)
@@ -122,8 +144,10 @@ Partial Class Form1
     Friend WithEvents textNim As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents textNama As TextBox
-    Friend WithEvents textProdi As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnTambah As Button
     Friend WithEvents list As ListView
+    Friend WithEvents cbKelamin As ComboBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents cbProdi As ComboBox
 End Class
